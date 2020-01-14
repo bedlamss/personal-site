@@ -12,6 +12,16 @@ paginate = 5
   showMenuItems = 2
   # Show reading time in minutes for posts
   showReadingTime = false
+  
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
 
 [languages]
   [languages.en]
