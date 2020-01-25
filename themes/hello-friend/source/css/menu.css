@@ -1,6 +1,6 @@
 @define-mixin menu {
   position: absolute;
-  background: var(--light-header);
+  background: #fafafa;
   box-shadow: var(--shadow);
   margin: 0;
   padding: 5px;

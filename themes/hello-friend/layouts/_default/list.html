@@ -2,43 +2,28 @@
   <div class="posts">
     {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
     {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
-
-    {{ $PageContext := . }}
-    {{ if .IsHome }}
-      {{ $PageContext = .Site }}
-    {{ end }}
-    {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) }}
+    {{ $paginator := .Paginate (where .Data.Pages "Type" $contentTypeName) }}
 
     {{ range $paginator.Pages }}
     <div class="post on-list">
       <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
       <div class="post-meta">
-        {{ if .Date }}
-          <span class="post-date">
-            {{ .Date.Format ($.Site.Params.DateFormatList | default "2006-01-02") }}
-          </span>
-        {{ end }}
+        <span class="post-date">
+          {{ .Date.Format "2006-01-02" }}
+        </span>
         {{ with .Params.Author }}<span class="post-author">— {{ $.Site.Params.WrittenBy | default "Written by" }} {{ . }}</span>{{ end }}
-        {{ if $.Site.Params.ShowReadingTime }}
-          <span class="post-read-time">— {{ .ReadingTime }} {{ $.Site.Params.MinuteReadingTime | default "min read" }}</span>
-        {{ end }}
       </div>
-
 
       {{ if .Params.tags }}
         <span class="post-tags">
           {{ range .Params.tags }}
-            #<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>&nbsp;
+            #<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}">{{ . }}</a>&nbsp;
           {{ end }}
         </span>
       {{ end }}
 
-      {{ if .Params.Cover }}
-        {{ if .Params.UseRelativeCover }}
-          <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="post-cover" />
-        {{ else }}
-          <img src="{{ .Params.Cover | absURL }}" class="post-cover" />
-        {{ end }}
+      {{ with .Params.Cover }}
+        <img src="{{ . | absURL }}" class="post-cover" />
       {{ end }}
 
       <div class="post-content">

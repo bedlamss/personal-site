@@ -91,9 +91,10 @@
   !*** ./source/js/index.js ***!
   \****************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("// Add your script here\n\n//# sourceURL=webpack:///./source/js/index.js?");
+"use strict";
+eval("// Add your script here\n\n\n//# sourceURL=webpack:///./source/js/index.js?");
 
 /***/ }),
 
@@ -102,9 +103,10 @@ eval("// Add your script here\n\n//# sourceURL=webpack:///./source/js/index.js?"
   !*** ./source/js/menu.js ***!
   \***************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("var container = document.querySelector(\".container\");\nvar menu = document.querySelector(\".menu\");\nvar mobileMenuTrigger = document.querySelector(\".menu-trigger\");\nvar desktopMenu = document.querySelector(\".menu__inner--desktop\");\nvar desktopMenuTrigger = document.querySelector(\".menu__sub-inner-more-trigger\");\nvar menuMore = document.querySelector(\".menu__sub-inner-more\");\nvar mobileQuery = getComputedStyle(document.body).getPropertyValue(\"--phoneWidth\");\n\nvar isMobile = function isMobile() {\n  return window.matchMedia(mobileQuery).matches;\n};\n\nvar isMobileMenu = function isMobileMenu() {\n  mobileMenuTrigger && mobileMenuTrigger.classList.toggle(\"hidden\", !isMobile());\n  menu && menu.classList.toggle(\"hidden\", isMobile());\n  menuMore && menuMore.classList.toggle(\"hidden\", !isMobile());\n}; // Common\n\n\nmenu && menu.addEventListener(\"click\", function (e) {\n  return e.stopPropagation();\n});\nmenuMore && menuMore.addEventListener(\"click\", function (e) {\n  return e.stopPropagation();\n});\nisMobileMenu();\ndocument.body.addEventListener(\"click\", function () {\n  if (!isMobile() && menuMore && !menuMore.classList.contains(\"hidden\")) {\n    menuMore.classList.add(\"hidden\");\n  } else if (isMobile() && !menu.classList.contains(\"hidden\")) {\n    menu.classList.add(\"hidden\");\n  }\n});\nwindow.addEventListener(\"resize\", isMobileMenu); // Mobile menu\n\nmobileMenuTrigger && mobileMenuTrigger.addEventListener(\"click\", function (e) {\n  e.stopPropagation();\n  menu && menu.classList.toggle(\"hidden\");\n}); // Desktop menu\n\ndesktopMenuTrigger && desktopMenuTrigger.addEventListener(\"click\", function (e) {\n  e.stopPropagation();\n  menuMore && menuMore.classList.toggle(\"hidden\");\n\n  if (menuMore && menuMore.getBoundingClientRect().right > container.getBoundingClientRect().right) {\n    menuMore.style.left = \"auto\";\n    menuMore.style.right = 0;\n  }\n});\n\n//# sourceURL=webpack:///./source/js/menu.js?");
+"use strict";
+eval("\n\nvar container = document.querySelector(\".container\");\nvar menu = document.querySelector(\".menu\");\nvar mobileMenuTrigger = document.querySelector(\".menu-trigger\");\nvar desktopMenu = document.querySelector(\".menu__inner--desktop\");\nvar desktopMenuTrigger = document.querySelector(\".menu__sub-inner-more-trigger\");\nvar menuMore = document.querySelector(\".menu__sub-inner-more\");\nvar mobileQuery = getComputedStyle(document.body).getPropertyValue(\"--phoneWidth\");\n\nvar isMobile = function isMobile() {\n  return window.matchMedia(mobileQuery).matches;\n};\n\nvar isMobileMenu = function isMobileMenu() {\n  mobileMenuTrigger && mobileMenuTrigger.classList.toggle(\"hidden\", !isMobile());\n  menu && menu.classList.toggle(\"hidden\", isMobile());\n  menuMore && menuMore.classList.toggle(\"hidden\", !isMobile());\n}; // Common\n\n\nmenu && menu.addEventListener(\"click\", function (e) {\n  return e.stopPropagation();\n});\nmenuMore && menuMore.addEventListener(\"click\", function (e) {\n  return e.stopPropagation();\n});\nisMobileMenu();\ndocument.body.addEventListener(\"click\", function () {\n  if (!isMobile() && !menuMore.classList.contains(\"hidden\")) {\n    menuMore.classList.add(\"hidden\");\n  } else if (isMobile() && !menu.classList.contains(\"hidden\")) {\n    menu.classList.add(\"hidden\");\n  }\n});\nwindow.addEventListener(\"resize\", isMobileMenu); // Mobile menu\n\nmobileMenuTrigger && mobileMenuTrigger.addEventListener(\"click\", function (e) {\n  e.stopPropagation();\n  menu && menu.classList.toggle(\"hidden\");\n}); // Desktop menu\n\ndesktopMenuTrigger && desktopMenuTrigger.addEventListener(\"click\", function (e) {\n  e.stopPropagation();\n  menuMore && menuMore.classList.toggle(\"hidden\");\n\n  if (menuMore.getBoundingClientRect().right > container.getBoundingClientRect().right) {\n    menuMore.style.left = \"auto\";\n    menuMore.style.right = 0;\n  }\n});\n\n//# sourceURL=webpack:///./source/js/menu.js?");
 
 /***/ }),
 
@@ -113,9 +115,10 @@ eval("var container = document.querySelector(\".container\");\nvar menu = docume
   !*** ./source/js/theme.js ***!
   \****************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("// Toggle theme\nvar getTheme = window.localStorage && window.localStorage.getItem(\"theme\");\nvar themeToggle = document.querySelector(\".theme-toggle\");\nvar isDark = getTheme === \"dark\";\n\nif (getTheme !== null) {\n  document.body.classList.toggle(\"dark-theme\", isDark);\n}\n\nthemeToggle.addEventListener(\"click\", function () {\n  document.body.classList.toggle(\"dark-theme\");\n  window.localStorage && window.localStorage.setItem(\"theme\", document.body.classList.contains(\"dark-theme\") ? \"dark\" : \"light\");\n});\n\n//# sourceURL=webpack:///./source/js/theme.js?");
+"use strict";
+eval("\n\n// Toggle theme\nvar getTheme = window.localStorage && window.localStorage.getItem(\"theme\");\nvar themeToggle = document.querySelector(\".theme-toggle\");\nvar isDark = getTheme === \"dark\";\n\nif (getTheme !== null) {\n  document.body.classList.toggle(\"dark-theme\", isDark);\n}\n\nthemeToggle.addEventListener(\"click\", function () {\n  document.body.classList.toggle(\"dark-theme\");\n  window.localStorage && window.localStorage.setItem(\"theme\", document.body.classList.contains(\"dark-theme\") ? \"dark\" : \"light\");\n});\n\n//# sourceURL=webpack:///./source/js/theme.js?");
 
 /***/ }),
 
