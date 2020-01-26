@@ -26,11 +26,11 @@ paginate = 5
 [languages]
   [languages.en]
     title = "Hello Friend"
-    subtitle = "A simple theme"
+    subtitle = "kh.corp"
     keywords = ""
     copyright = "© 2020 kh.corp"
     menuMore = "Show more"
-    writtenBy = "Written by"
+    writtenBy = "Heorhii Khrabrov"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
     newerPosts = "Newer posts"
