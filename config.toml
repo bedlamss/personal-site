@@ -9,7 +9,7 @@ paginate = 5
   # "light" or "dark"
   defaultTheme = "dark"
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 3
   # Show reading time in minutes for posts
   showReadingTime = false
   
@@ -19,9 +19,14 @@ paginate = 5
     weight = 1
 
   [[menu.main]]
-    name = "About"
-    url = "/about"
+    name = "MikroTik"
+    url = "/mikrotik"
     weight = 2
+    
+  [[menu.main]]
+    name = "Whoami"
+    url = "/about"
+    weight = 3
 
 [languages]
   [languages.en]
@@ -40,7 +45,7 @@ paginate = 5
     dateFormatList = "2006-01-02"
 
     [languages.en.params.logo]
-      logoText = "Dev"
+      logoText = "/dev/ops"
       logoHomeLink = "/"
     # or
     #
