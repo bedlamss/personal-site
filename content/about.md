@@ -1,4 +1,4 @@
-![profile](/posts/images/profile.jpg)
+![profile](/profile.jpg)
 GNU/Linux enthusiast, philosopher, family man.
 Got acquainted with the world of open source software in 2011. 
 
