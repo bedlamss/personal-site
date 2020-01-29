@@ -1,0 +1,21 @@
+<!-- profiles -->
+
+{{ if .Get "mail" }}
+	<a href="{{.Get "mail" }}" target="_blank" title="email"><i class="fas fa-envelope"></i></a>
+{{end}}
+
+{{ if .Get "linkedin" }}
+	<span>&#32;|&#32;</span><a href="{{ .Get "linkedin" }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+{{end}}
+
+{{ if .Get "facebook" }}
+	<span>&#32;|&#32;</span><a href="{{ .Get "facebook" }}" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+{{end}}
+
+{{ if .Get "github" }}
+	<span>&#32;|&#32;</span><a href="{{ .Get "github" }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+{{end}}
+
+{{ if .Get "gitlab" }}
+	<span>&#32;|&#32;</span><a href="{{ .Get "gitlab" }}" target="_blank" title="GitLab"><i class="fab fa-gitlab"></i></a>
+{{end}}

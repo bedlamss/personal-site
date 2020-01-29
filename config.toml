@@ -5,24 +5,21 @@ paginate = 5
 
 [params]
   # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
+  #contentTypeName = "posts"
   # "light" or "dark"
   defaultTheme = "dark"
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 3
   # Show reading time in minutes for posts
   showReadingTime = false
+  contentTypeName = "posts"
+  
   
   [[menu.main]]
     name = "Blog"
-    url = "/blog"
+    url = "/"
     weight = 1
-
-  [[menu.main]]
-    name = "MikroTik"
-    url = "/mikrotik"
-    weight = 2
-    
+  
   [[menu.main]]
     name = "Whoami"
     url = "/about"
