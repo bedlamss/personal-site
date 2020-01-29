@@ -1,4 +1,4 @@
-baseurl = "https://personal.kh-corp.mem"
+baseurl = "https://personal.kh-corp.me"
 languageCode = "en-us"
 theme = "hello-friend"
 paginate = 5
