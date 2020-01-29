@@ -1,7 +1,7 @@
 ---
 title: 'Realizing the power of Hugo shortcodes - Profile icons section '
 date: '2019-10-04T17:30:27+03:00'
-draft: false
+draft: true
 tags:
   - hugo
   - go

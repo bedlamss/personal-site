@@ -1,13 +1,13 @@
 ---
 title: Matching /dev/hidraw* devices with physical devices
 date: '2019-10-04T00:07:30+03:00'
-draft: false
+draft: true
 tags:
   - bash
   - hidraw
   - sysfs
   - hid
-  - tutorial
+  - tutorial   
 ---
 > During development of ContourUSB device driver (I' ve dedicated [a post](/project/contourusb/) for this one) I had a hard time detecting the hidraw device created for the meter. I' ve been suggested to just print all available hidraw devices (pseudo files), then plug the meter and re-print hidraw devices to detect which one was just created. While this worked I wasn't really thrilled with the approach. So I created this simple following script.
 
