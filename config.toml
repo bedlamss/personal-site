@@ -1,4 +1,4 @@
-baseurl = "https://kh-corp.netlify.com"
+baseurl = "https://personal.kh-corp.mem"
 languageCode = "en-us"
 theme = "hello-friend"
 paginate = 5
