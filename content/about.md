@@ -1,7 +1,10 @@
+<<<<<<< HEAD:content/about/index.md
 +++
 title = "Whoami"
 type = "contact"
 +++
+=======
+>>>>>>> 17808d77519e1b78c814cf2cd1914ae1b0652b02:content/about.md
 ![profile](/profile.jpg)
 GNU/Linux enthusiast, philosopher, family man.
 Got acquainted with the world of open source software in 2011. 
