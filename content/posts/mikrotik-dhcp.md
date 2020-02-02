@@ -4,15 +4,18 @@ date: 2020-01-30T02:15:27+02:00
 draft: false
 description: One of the most important MikroTik settings to stabilize the operation of WiFi clients
 tags:
-  - mikrotik
+  - MikroTik
   - solving
 ---
  
-One of the most important MikroTik settings to stabilize the operation of WiFi clients
+There is one of the most important MikroTik setting to stabilize the operation with WiFi clients.
 
-If your iPhone or laptop that have a modern network card able to save energy, you may find that the router breaks the connection and your device does not connect to wlan very quickly
+If your iPhone or laptop has a modern network card and able to save energy, you may find that the router breaks the connection. So, your device does not connect to wlan very quickly.
 
-The thing is the lease time parameter in the DCHP server configuration, by default the microtic suggests 10 minutes of IP address lease time, it's hard for me to judge whether it's much or little, in practice it's little and you're getting problems.
+By default MikroTik suggests 10 minutes of IP address lease time. In practice it's not enough and you'll get problems. 
 
-The solution is to increase the rental time by at least a whole working day, on the home network can be more
+The solution is increasing rental time for at least a whole working day. In home network you can do it longer for comfortable using.
+
+For example, this is the window where you can increase lease time (I've increased it until 4 days):
+
 ![2020-01-30_02-04](/2020-01-30_02-04.png)
