@@ -2,6 +2,7 @@
 title: "MikroTik hAP lite [not enough space for update]"
 date: 2020-01-29T04:21:18+02:00
 draft: false
+description: Solution of the problem with updating packages in cheap MikroTik's routers.
 tags:
   - MikroTik
   - solving
