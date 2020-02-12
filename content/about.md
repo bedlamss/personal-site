@@ -7,8 +7,7 @@ type = "about"
 
 GNU/Linux enthusiast, philosopher, family man.
 
-
 *****************************
 {{< rawhtml >}}
-	<a href="/Khrabrov_resume.pdf" target="_blank">Resume</a><span>&#32;
+	<a href="/Khrabrov_Heorhii-resume.pdf" target="_blank">Resume</a><span>&#32;
 {{< /rawhtml >}}
