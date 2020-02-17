@@ -1,5 +1,5 @@
 ---
-title: " Hacking Wi-Fi. The easiest and most effective way"
+title: "Hacking Wi-Fi. The easiest and most effective way"
 date: 2020-02-17
 draft: false
 description: My experience of hacking WI-FI by handshake and vulnerability. 
@@ -34,7 +34,7 @@ I don't consider completely old access points, standard passwords and penetratio
 
 **Optional:**
 
-* [`Wifite2`](https://github.com/derv82/wifite2): CLI for manage many utils
+* [`Wifite2`](https://github.com/derv82/wifite2): CLI for manage many utils.
 
 * [`tshark`](https://www.wireshark.org/docs/man-pages/tshark.html): For detecting WPS networks and inspecting handshake capture files.
 
@@ -49,13 +49,11 @@ I don't consider completely old access points, standard passwords and penetratio
 
 You must also have a Wi-Fi adapter that supports monitor mode to intercept handshake.
 
-We put our Wi-Fi adapter into monitor mode:
-
-Check name our wifi adapter, use  `ip a`:
+We put our Wi-Fi adapter into monitor mode. Check name of our Wi-Fi adapter, use  `ip a`:
 
 ![](/984c2c5e12e983ab346f56832c01fc0e226f386e.png)
 
-Next, that will change the name of our adapter and add the mon prefix.
+Next, that will change the name of our adapter and add the mon prefix:
 
 ![](/1de217c3362562e974cffc6dc570cc1a7fb92b0d.png)
 
@@ -89,11 +87,11 @@ And the result after 2 minutes of waiting:
 
 ![](/5573bd171f4e1e69273c1e006c7076964984c974.png)
 
-Penetration through WPS with **[Pixiewps](https://github.com/wiire-a/pixiewps)**
+Penetration through WPS with **[Pixiewps](https://github.com/wiire-a/pixiewps)**.
 
-There is a simple and convenient utility for working with this program [OneShot](https://github.com/drygdryg/OneShot)
+There is a simple and convenient utility for working with this program [OneShot](https://github.com/drygdryg/OneShot).
 
-In dependencies which python3, wpa_supplicant and respectively **[Pixiewps](https://github.com/wiire-a/pixiewps)**
+In dependencies which python3, wpa_supplicant and respectively **[Pixiewps](https://github.com/wiire-a/pixiewps)**.
 
 Download the script and scan the network:
 
@@ -105,7 +103,7 @@ where `00: 90: 4C: C1: AC: 21` is the MAC of our network.
 
 After a moment, we get a password.
 
-reference guide:
+References guide:
 
 https://github.com/derv82/wifite2
 
