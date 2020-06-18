@@ -4,10 +4,12 @@ date: 2020-01-30T02:15:27+02:00
 draft: false
 description: One of the most important MikroTik settings to stabilize the operation of WiFi clients
 tags:
-  - MikroTik
-  - solving
+
+- MikroTik
+- solving
+
 ---
- 
+
 There is one of the most important MikroTik setting to stabilize the operation with WiFi clients.
 
 If your iPhone or laptop has a modern network card and able to save energy, you may find that the router breaks the connection. So, your device does not connect to wlan very quickly.
